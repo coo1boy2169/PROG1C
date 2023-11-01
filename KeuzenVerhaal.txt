@@ -1,0 +1,66 @@
+let StartTeskt = "je bent aan het slapen en je hoort je alarm afgaan wat doe je \n A= Zet de alamr uit en word wakker {T1} \n B= Zet de alarm uit en ga door slapen {T2}"
+
+let Tekst1 = "Je word wakker en je denk er aan om te gaan douchen wat doe je \n A= Ga niet douchen en ga naar school{T3} \n B= Ga wel douchen en ga daarna naar school{T4}"
+
+let Tekst2 = "Je besluit toch niet optestaan maar je moeder stormt binnen in je kamer en makt je wakker en zecht dat je bijna telaat komt naar school \n Ga naar {T1}"
+
+let Tekst3 =  " Je besluit om niet te douchen en je gaat naar school maar je denkt er aan om de fiets te nemen of de bus welke kieze je \n A= Neem de bus \n B=Neem de fiets" {T5}
+
+let TesktA = " Je gaat met de fiets en je ziet onder weg een oude vrouw die moeite heeft met lopen \n A= help haar \n B= Help haar niet
+
+let TesktB = " Je helpt haar en je krijgt geld van haar je gaat door fietsen naar school ga naar {T5}
+
+let Tekst4 = "Je besluit om te douchen en je gaat daarna naar school maar je weet niet wat je wilt nemen je hebt 2 keuzes \n A= Neem de fiets \n B= Neem de bus" {T5}
+
+let Tekst5 = " Je bent aan gekomen op school maar je ziet niemand je vraag je af wat er aan de hand is je denk er aan om \n A= naar binnen gaan {T6} \n B= Ga naar huis{T7}"
+
+let Tekst6= " Je besluit in de school te gaan je kijkt rond maar er is echt niemand ne kijkt langer rond en je hoort inees iets \n A= Ga richting de geluid {8T} \n B= Je rent zo snel mogelijk weg {T9}"
+
+let Teskt7 = " Je gaat naar huis en je gaat iets voor je zelf doen  { Saai einde }"
+
+let Teskt8 = " Je besluit richting de geluid te gaan en je ziet iets in je oog hoek je gaat langzaam er en en.....  Niks er is niks wat ga je nu doen \n A= je vind het wel goed zo en je gaat naar huis {T7} \n B= Je gaat door kijken meschien vind je wel iets leuks {T10}"
+
+let Tekst9 = " Je rent zo hard weg dat je broek naar beneden valt en dat je nu door de school loop met je onder broek je gaat naar de docente kamer en je kijkt voor een broek je ziet een roze en een paarse broek welke kies je \n A= Roze {T11} \n B= Paarse {T12}"
+
+let Tekst10 = " Je kijkt door rond en je hoort NOG een geluid je bent moedig genoeg om te kijken wat het is maar op het eind ben je toch  shakie \n A= Ga naar binnen {13T} \n B= Loop weg {14}"
+
+let Tekst11 = " Je kiest de roze broek uit ga naar {T10}"
+
+let Teskt12 = " Je kiets de paars broek uit ga naar {T10}" 
+
+let Tekst13 = " Je  Gaat naar binnen en iedereen van je klas springt op en ze zaggen SURPRISEE!!!!! oh ja het is mijn verjaardag wat ga je nu doen \n A= Je gaat met je klas vieren  {SURPRISEE einde } \n B= Je gaat naar huis en je gaar met je ouders vieren {T15}" 
+
+let Tekst14 = " Je loopt weg en je gaat naar huis je krijgt inees een bericht van je ouders { waar ben je ??} je vraagt je af waar ze het voer hebben maar je herinert je inees dat het je verjaardag is dus je rent snel naar huis en vier het met je ouder {Met je ouders vieren einde}"
+
+let Tekst15 = " je rent naar huis en je vier je verjaardag met je ouders {Met je ouder vieren einde } \n A= dorr gaan {T16} \n B= stoppen "
+
+let Tekst16 = " Je krijgt inees een bericht je kijkt op je telefoon en er staat kom naar buiten \n A= Je doet wat het zecht  {T17} \n B= je doet je eigen ding {18}"
+
+let Tekst17 = " Je gaat naar buiten en je ziet een zwarte figuur in de afstand je word een beetje newveus \n A= Ga er na toe en vraag wat hij wilt  {T19} \n B= kijk van een afstadn wat hij doet {T20}"
+
+let Teskt18 = " Je negeert de appje je kijkt uit het raam en je ziet een zwaar figuur hij wijst naar jouw en geeft een teken dat hij jouw naar buiten wilt {T17}"
+
+let Tekst19 = " Je vraagt hem Wat doe jij hier? maar hij reageert niet en je vraagt hem weer wat doe jij hier? hij reageert niet en loopt weg \n  A= Volg hem {T21} \n B=Loopt terug het huis in {T22}" 
+
+let Teskt20 = " Je kijkt wat hij doet maar hij doet niks hij staat stil maar uit eindelijk loop hij weg \n A= ren achter hem aan {T21} \n B= Negeer het en vier vedder {T22}"
+
+let Tekst21 = " Je beluit hem hem te volgen en hij wist het dus hij lokt je in een bos en vermoord je {Slechte Einde }"
+
+let Tekst22 = " Je beluitom niks te doen { met je ouder vieren einde}"
+
+
+// logt de tekst naar het console en de gebruiker mag beginngen met kiezen
+console.log (tekststart)
+
+
+
+question = ["A" , "B"];
+  index = readlineSync.keyInSelect(question , 'Welke kies je ?!?  ');
+  console.log ('jouw antword was ' + question[index]  );
+
+  if (question[index] === "A"){
+    console.log(tekst1)
+  }
+  else if (question[index] === "B"){
+    console.log ( tekst2)
+  }
